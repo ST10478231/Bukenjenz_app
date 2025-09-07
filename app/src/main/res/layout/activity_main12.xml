@@ -5,34 +5,48 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/screenshot_2025_09_07_181233"
     android:orientation="vertical"
     tools:context=".MainActivity12">
 
     <Button
         android:id="@+id/button11"
-        android:layout_width="139dp"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
         android:text="Return" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
         android:text="Booking"
         android:textColor="@color/white"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextText3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="332dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
         android:ems="10"
         android:hint="I WOULD LIKE TO MAKE A BOOKING...."
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:textStyle="italic" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="137dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
         android:text="Submit" />
 </LinearLayout>
