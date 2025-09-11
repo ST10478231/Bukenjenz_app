@@ -31,7 +31,7 @@
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#370505"
         android:text="First Aid" />
@@ -39,7 +39,7 @@
     <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_marginTop="2dp"
         android:backgroundTint="#B6A883"
         android:text="Sewing" />
@@ -47,7 +47,7 @@
     <Button
         android:id="@+id/button8"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_marginTop="2dp"
         android:backgroundTint="#69976D"
         android:text="Landscaping" />
@@ -55,7 +55,7 @@
     <Button
         android:id="@+id/button9"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_marginTop="2dp"
         android:backgroundTint="#3B6D6B"
         android:text="Life Skills" />
