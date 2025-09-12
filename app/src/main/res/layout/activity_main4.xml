@@ -10,7 +10,7 @@
     tools:context=".MainActivity4">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Return"
         android:layout_width="149dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="230dp"
@@ -30,7 +30,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/ChildMinding"
         android:layout_width="412dp"
         android:layout_height="90dp"
         android:layout_gravity="center"
@@ -40,7 +40,7 @@
         android:textColor="@color/white" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/Cooking"
         android:layout_width="412dp"
         android:layout_height="90dp"
         android:layout_gravity="center"
@@ -50,7 +50,7 @@
         android:textColor="@color/white" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/Garden"
         android:layout_width="417dp"
         android:layout_height="90dp"
         android:layout_gravity="center"

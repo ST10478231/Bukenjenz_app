@@ -1,20 +1,48 @@
 package com.example.milestone2
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity4 : AppCompatActivity() {
+    private lateinit var button3 : Button
+    private lateinit var textView3 : TextView
+    private lateinit var button4 : Button
+    private lateinit var button5 : Button
+    private lateinit var button8 : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main4)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main4)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        button3 = findViewById(R.id.button3)
+        textView3 = findViewById(R.id.textView3)
+        button4 = findViewById(R.id.button4)
+        button5 = findViewById(R.id.button5)
+        button8 = findViewById(R.id.button8)
+
+        button3.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
         }
+        button4.setOnClickListener {
+            val intent = Intent(this, MainActivity5::class.java)
+            startActivity(intent)
+        }
+        button5.setOnClickListener {
+            val intent = Intent(this, MainActivity6::class.java)
+            startActivity(intent)
+        }
+        button8.setOnClickListener {
+            val intent = Intent(this, MainActivity7::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
 }
