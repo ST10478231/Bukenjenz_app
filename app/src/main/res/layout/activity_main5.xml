@@ -11,30 +11,97 @@
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="115dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#0D0606"
-        android:text="Return" />
+        android:text="Return"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="128dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="-65dp"
+        android:backgroundTint="#0D0606"
+        android:text="Next"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="4dp"
         android:gravity="center"
-        android:text="First Aid"
+        android:text="FIRST AID"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Fee:R1 500"
+        android:textColor="@color/white"
+        android:textSize="26dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="First aid awareness and basic life support"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:layout_marginTop="350dp"
-        android:gravity="center"
-        android:text="Details of First Aid"
-        android:textColor="@color/white" />
+        android:layout_height="38dp"
+        android:layout_marginTop="202dp"
+        android:textStyle="bold"
+        android:text="Details:"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Wounds and bleeding"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Burns and fractures"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Emergency scene management"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Cardio-Pulmonary Resuscitation"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Respiratory distres e.g., choking, breathing problems"/>
 
 </LinearLayout>

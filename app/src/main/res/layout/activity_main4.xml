@@ -18,6 +18,16 @@
         android:text="Return"
         android:textColor="@color/white" />
 
+    <Button
+        android:id="@+id/ButtonNext"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="-51dp"
+        android:layout_marginBottom="-2dp"
+        android:backgroundTint="#0D0D0C"
+        android:text="Next" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"

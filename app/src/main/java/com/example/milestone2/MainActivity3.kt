@@ -14,6 +14,9 @@ class MainActivity3 : AppCompatActivity() {
     private lateinit var Sewing : Button
     private lateinit var Landscaping : Button
     private lateinit var LifeSkills : Button
+    private lateinit var next : Button
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +27,7 @@ class MainActivity3 : AppCompatActivity() {
         Sewing = findViewById(R.id.button5)
         Landscaping = findViewById(R.id.button8)
         LifeSkills = findViewById(R.id.button9)
+        next = findViewById(R.id.buttonNext)
 
         FirstAid.setOnClickListener {
             val intent = Intent(this, MainActivity5::class.java)
@@ -45,6 +49,12 @@ class MainActivity3 : AppCompatActivity() {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
+        next.setOnClickListener {
+            val intent = Intent(this, MainActivity12::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 }

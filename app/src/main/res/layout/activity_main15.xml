@@ -1,125 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main15"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/screenshot_2025_09_07_181233"
-    android:orientation="vertical"
     tools:context=".MainActivity15">
 
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/black"
-        android:text="Return"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="39dp" />
-
-    <TextView
-        android:id="@+id/textView10"
+    <LinearLayout
+        android:id="@+id/main15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="PLEASE CHOOSE ONE OF THE CAMPUSES BELOW"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="117dp" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="234dp"
-        android:layout_height="184dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/screenshot_2025_08_18_125437"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="136dp" />
+        <Button
+            android:id="@+id/buttonReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/black"
+            android:text="Return" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Rosebank Campus"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="PLEASE CHOOSE ONE OF THE CAMPUSES BELOW"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:text="Rosebank College, 20 Main Rd, Rosebank, Cape Town, 7700"
-        android:textColor="@color/white" />
+        <!-- 🌹 Rosebank Campus -->
+        <ImageView
+            android:id="@+id/imageRosebank"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/screenshot_2025_08_18_125437" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Sandton Campus"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnRosebank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rosebank Campus"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp" />
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:text="Empisal Building, 207 Bree St, Cape Town City Centre, Cape Town, 8000"
-        android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/addressRosebank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rosebank College, 20 Main Rd, Rosebank, Cape Town, 7700"
+            android:textColor="@color/white"
+            android:layout_marginBottom="25dp" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Aberton Campus"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        <!-- 🏙 Sandton Campus -->
+        <ImageView
+            android:id="@+id/imageSandton"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/screenshot_2025_08_18_125437" />
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:text="25 Lake Arthur St, Brackendowns, Alberton, 1448"
-        android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btnSandton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sandton Campus"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Phone: +27 01 657 8878"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/addressSandton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Empisal Building, 207 Bree St, Cape Town City Centre, Cape Town, 8000"
+            android:textColor="@color/white"
+            android:layout_marginBottom="25dp" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email: info@empoweringthenation.co.za"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        <!-- 🏫 Alberton Campus -->
+        <ImageView
+            android:id="@+id/imageAlberton"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/screenshot_2025_08_18_125437" />
 
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="@color/black"
-        android:text="Next" />
-</LinearLayout>
+        <Button
+            android:id="@+id/btnAlberton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alberton Campus"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp" />
 
+        <TextView
+            android:id="@+id/addressAlberton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25 Lake Arthur St, Brackendowns, Alberton, 1448"
+            android:textColor="@color/white"
+            android:layout_marginBottom="25dp" />
+
+        <!-- 📞 Selected Campus Details -->
+        <TextView
+            android:id="@+id/tvSelectedCampusDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/black"
+            android:text="Next" />
+
+    </LinearLayout>
+</ScrollView>

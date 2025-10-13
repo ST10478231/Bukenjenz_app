@@ -15,15 +15,19 @@ class MainActivity4 : AppCompatActivity() {
     private lateinit var button4 : Button
     private lateinit var button5 : Button
     private lateinit var button8 : Button
+
+    private lateinit var next : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main4)
-        button3 = findViewById(R.id.button3)
+        button3 = findViewById(R.id.Return)
         textView3 = findViewById(R.id.textView3)
-        button4 = findViewById(R.id.button4)
-        button5 = findViewById(R.id.button5)
-        button8 = findViewById(R.id.button8)
+        button4 = findViewById(R.id.ChildMinding)
+        button5 = findViewById(R.id.Cooking)
+        button8 = findViewById(R.id.Garden)
+        next = findViewById(R.id.ButtonNext)
 
         button3.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
@@ -41,6 +45,11 @@ class MainActivity4 : AppCompatActivity() {
             val intent = Intent(this, MainActivity7::class.java)
             startActivity(intent)
         }
+        next.setOnClickListener {
+            val intent = Intent(this, MainActivity12::class.java)
+            startActivity(intent)
+        }
+
 
 
 

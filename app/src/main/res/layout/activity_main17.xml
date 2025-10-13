@@ -1,76 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main17"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/screenshot_2025_09_07_181233"
-    android:orientation="vertical"
-    tools:context=".MainActivity17">
-
-  <Button
-      android:id="@+id/button21"
-      android:layout_width="102dp"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="40dp"
-      android:backgroundTint="@color/black"
-      android:text="Return"
-      tools:layout_editor_absoluteX="90dp"
-      tools:layout_editor_absoluteY="99dp" />
-
-  <TextView
-      android:id="@+id/textView26"
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="15dp"
-      android:text="QUOTE TOTAL FEE"
-      android:textColor="@color/white"
-      android:textSize="20sp"
-      android:textStyle="bold"
-      tools:layout_editor_absoluteX="174dp"
-      tools:layout_editor_absoluteY="257dp" />
+      android:layout_height="match_parent"
+      android:padding="20dp"
+      android:background="@drawable/screenshot_2025_09_07_181233">
 
-  <TextView
-      android:id="@+id/textView27"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="15dp"
-      android:text="Course Name                                                         Fee"
-      android:textColor="@color/white"
-      android:textSize="18sp"
-      tools:layout_editor_absoluteX="174dp"
-      tools:layout_editor_absoluteY="327dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-  <TextView
-      android:id="@+id/textView28"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="8dp"
-      android:layout_marginBottom="50dp"
-      android:gravity="center"
-      android:hint="Details..."
-      android:textColorHint="@color/white"
-      android:textSize="24sp"
-      android:textStyle="italic" />
+      <!-- Return Button -->
+      <Button
+          android:id="@+id/btnReturn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Return"
+          android:textColor="@color/white"
+          android:backgroundTint="@color/black"/>
 
-  <TextView
-      android:id="@+id/textView29"
-      android:layout_width="189dp"
-      android:layout_height="149dp"
-      android:layout_marginLeft="200dp"
-      android:gravity="center"
-      android:hint="Detaials of total cost"
-      android:textColorHint="@color/white"
-      android:textStyle="italic" />
+      <!-- Title -->
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="SUMMARY"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          android:layout_marginTop="16dp"
+          android:textColor="@color/white"/>
 
-  <Button
-      android:id="@+id/button22"
-      android:layout_width="152dp"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="240dp"
-      android:layout_marginTop="30dp"
-      android:backgroundTint="@color/black"
-      android:text="Next" />
+      <!-- ✨ Divider Line -->
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#AAAAAA"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp" />
 
-</LinearLayout>
+      <!-- Client Details Section -->
+      <TextView
+          android:text="Client Details"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:layout_marginBottom="8dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"/>
+
+      <TextView
+          android:id="@+id/txtName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Name:"
+          android:layout_marginBottom="4dp"
+          android:textColor="@color/white"/>
+
+      <TextView
+          android:id="@+id/txtMobile"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Mobile:"
+          android:layout_marginBottom="4dp"
+          android:textColor="@color/white"/>
+
+      <TextView
+          android:id="@+id/txtEmail"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Email:"
+          android:layout_marginBottom="8dp"
+          android:textColor="@color/white"/>
+
+      <!-- ✨ Divider Line -->
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#AAAAAA"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"/>
+
+      <!-- Payment Section -->
+      <TextView
+          android:text="Payment"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:layout_marginBottom="8dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"/>
+
+      <TextView
+          android:id="@+id/txtCourse"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Course name/names:"
+          android:layout_marginBottom="4dp"
+          android:textColor="@color/white"/>
+
+      <TextView
+          android:id="@+id/txtTotalFee"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Total Fee:"
+          android:layout_marginBottom="8dp"
+          android:textColor="@color/white"/>
+
+      <!-- ✨ Divider Line -->
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#AAAAAA"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          />
+
+      <!-- Campus Details Section -->
+      <TextView
+          android:text="Campus Details"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:layout_marginBottom="8dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"/>
+
+      <TextView
+          android:id="@+id/txtCampus"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Campus:"
+          android:layout_marginBottom="4dp"
+          android:textColor="@color/white"/>
+
+      <TextView
+          android:id="@+id/txtCampusAddress"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Address:"
+          android:layout_marginBottom="4dp"
+          android:textColor="@color/white"/>
+
+      <TextView
+          android:id="@+id/txtCampusContact"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Contact:"
+          android:layout_marginBottom="8dp"
+          android:textColor="@color/white"/>
+
+      <!-- ✨ Divider Line -->
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#AAAAAA"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="20dp"/>
+
+      <!-- Finish Button -->
+      <Button
+          android:id="@+id/btnFinish"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Finish"
+          android:backgroundTint="@color/black"/>
+
+    </LinearLayout>
+  </ScrollView>

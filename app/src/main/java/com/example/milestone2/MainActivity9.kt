@@ -10,13 +10,21 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity9 : AppCompatActivity() {
     private lateinit var Return : Button
+    private lateinit var next : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main9)
         Return = findViewById(R.id.button10)
+        next = findViewById(R.id.Button11)
         Return.setOnClickListener {
             val intent = Intent(this, MainActivity4::class.java)
+            startActivity(intent)
+        }
+
+        next.setOnClickListener {
+            val intent = Intent(this, MainActivity10::class.java)
             startActivity(intent)
         }
 

@@ -10,7 +10,7 @@
     tools:context=".MainActivity12">
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/returnbtn"
         android:layout_width="131dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -21,27 +21,28 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:text="Booking"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextText3"
-        android:layout_width="332dp"
-        android:layout_height="150dp"
+        android:layout_width="352dp"
+        android:layout_height="165dp"
         android:layout_gravity="center"
         android:layout_marginTop="110dp"
         android:ems="10"
         android:hint="I WOULD LIKE TO MAKE A BOOKING...."
         android:inputType="text"
         android:textColorHint="@color/white"
-        android:textStyle="italic" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/submitbtn"
         android:layout_width="137dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

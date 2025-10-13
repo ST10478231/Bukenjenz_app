@@ -11,31 +11,91 @@
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="115dp"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
         android:layout_marginTop="50dp"
         android:backgroundTint="#0D0606"
         android:text="Return" />
+
+    <Button
+        android:id="@+id/Button11"
+        android:layout_width="128dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="-65dp"
+        android:backgroundTint="#0D0606"
+        android:text="Next"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="0dp"
         android:gravity="center"
         android:text="Child Minding"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Fee:R750"
+        android:textColor="@color/white"
+        android:textSize="26dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Basic child and baby care"
+        android:textColor="@color/white"
+        android:textSize="23sp"/>
+
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:layout_marginTop="350dp"
-        android:gravity="center"
-        android:text="Details of Child Minding"
-        android:textColor="@color/white" />
+        android:layout_height="38dp"
+        android:layout_marginTop="235dp"
+        android:textStyle="bold"
+        android:text="Details:"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="From birth to six month old baby needs"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="From seven month to one year old baby needs"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Toddler needs"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Educational needs"/>
 
 
 </LinearLayout>
