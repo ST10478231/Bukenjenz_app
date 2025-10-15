@@ -28,5 +28,11 @@ https://github.com/ST10478231/Bukenjenz_app
 * Added photos of the diffrent campuses
 * Changes were done in the UI, such as button sizes and diffrent fonts
 
+# Content
+
+[Content_Bukenjenz[1].pdf](https://github.com/user-attachments/files/22934480/Content_Bukenjenz.1.pdf)
+
+
+
 
 
