@@ -17,12 +17,12 @@ class MainActivity12 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main12)
-
+        // declare buttons
         btnReturn = findViewById(R.id.returnbtn)
         submit = findViewById(R.id.submitbtn)
-
+        // Set click listeners
         btnReturn.setOnClickListener {
-            val intent = Intent(this, MainActivity3::class.java)
+            val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
 

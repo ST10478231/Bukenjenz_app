@@ -16,12 +16,13 @@ class MainActivity5 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main5)
+        // declare buttons
         Return = findViewById(R.id.button10)
         next = findViewById(R.id.Next)
 
-
+        // Set click listeners
         Return.setOnClickListener {
-            val intent = Intent(this, MainActivity4::class.java)
+            val intent = Intent(this, MainActivity3::class.java)
             startActivity(intent)
         }
         next.setOnClickListener {

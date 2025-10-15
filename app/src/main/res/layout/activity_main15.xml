@@ -18,9 +18,19 @@
             android:id="@+id/buttonReturn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="28dp"
             android:backgroundTint="@color/black"
             android:text="Return" />
+
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="-40dp"
+            android:backgroundTint="@color/black"
+            android:text="Next" />
 
         <TextView
             android:id="@+id/textView10"
@@ -33,14 +43,14 @@
             android:textStyle="bold"
             android:gravity="center" />
 
-        <!-- 🌹 Rosebank Campus -->
+        <!--  Rosebank Campus -->
         <ImageView
             android:id="@+id/imageRosebank"
             android:layout_width="250dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:src="@drawable/screenshot_2025_08_18_125437" />
+            android:src="@drawable/rosebank" />
 
         <Button
             android:id="@+id/btnRosebank"
@@ -59,13 +69,13 @@
             android:textColor="@color/white"
             android:layout_marginBottom="25dp" />
 
-        <!-- 🏙 Sandton Campus -->
+        <!--  Sandton Campus -->
         <ImageView
             android:id="@+id/imageSandton"
             android:layout_width="250dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:src="@drawable/screenshot_2025_08_18_125437" />
+            android:src="@drawable/sandton" />
 
         <Button
             android:id="@+id/btnSandton"
@@ -84,13 +94,13 @@
             android:textColor="@color/white"
             android:layout_marginBottom="25dp" />
 
-        <!-- 🏫 Alberton Campus -->
+        <!-- Alberton Campus -->
         <ImageView
             android:id="@+id/imageAlberton"
             android:layout_width="250dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:src="@drawable/screenshot_2025_08_18_125437" />
+            android:src="@drawable/alberton" />
 
         <Button
             android:id="@+id/btnAlberton"
@@ -109,7 +119,7 @@
             android:textColor="@color/white"
             android:layout_marginBottom="25dp" />
 
-        <!-- 📞 Selected Campus Details -->
+        <!--  Selected Campus Details -->
         <TextView
             android:id="@+id/tvSelectedCampusDetails"
             android:layout_width="match_parent"
@@ -120,14 +130,7 @@
             android:padding="10dp"
             android:visibility="gone" />
 
-        <Button
-            android:id="@+id/buttonNext"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="@color/black"
-            android:text="Next" />
+
 
     </LinearLayout>
 </ScrollView>

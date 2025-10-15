@@ -14,9 +14,20 @@
         android:id="@+id/button19"
         android:layout_width="109dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="@color/black"
         android:text="Return" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="-44dp"
+        android:backgroundTint="#0D0606"
+        android:text="Next"
+        android:textStyle="bold" />
+
 
     <TextView
         android:id="@+id/textView24"

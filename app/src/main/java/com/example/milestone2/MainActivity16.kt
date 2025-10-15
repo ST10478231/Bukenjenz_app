@@ -1,49 +1,60 @@
 package com.example.milestone2
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity16 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main16)
+    // declarations
+        val tvSelectedCourses = findViewById<TextView>(R.id.textView25) //
+        val tvDiscount = findViewById<TextView>(R.id.discount)
+        val btnCalculate = findViewById<Button>(R.id.button20)
+        val btnReturn = findViewById<Button>(R.id.button19)
+        val btnNext = findViewById<Button>(R.id.button21)
 
-        // Get references to the TextViews and Button
-        val selectedCoursesTextView = findViewById<TextView>(R.id.textView25)
-        val discountTextView = findViewById<TextView>(R.id.discount)
-        val calculateButton = findViewById<Button>(R.id.button20)
+    // retrieve data from shared preferences
+        val sharedPref = getSharedPreferences("UserData", MODE_PRIVATE)
+        val coursesString = sharedPref.getString("COURSES", "")
 
-        // Receive the list of selected courses from Page 13
-        val selectedCourses = intent.getStringArrayListExtra("selectedCourses") ?: arrayListOf()
-
-        // Display the selected courses
-        if (selectedCourses.isEmpty()) {
-            selectedCoursesTextView.text = "No courses selected"
+        if (coursesString.isNullOrEmpty()) {
+            tvSelectedCourses.text = "No courses selected"
         } else {
-            selectedCoursesTextView.text =
-                "Selected Courses:\n" + selectedCourses.joinToString("\n")
+            tvSelectedCourses.text = "Selected Courses:\n" + coursesString.replace(",", "\n")
         }
-
-        // When the user clicks the Calculate button
-        calculateButton.setOnClickListener {
-            val courseCount = selectedCourses.size
-
-            // Calculate discount based on number of courses
-            val discountPercentage = when (courseCount) {
+    // calculate discount based on course count
+        btnCalculate.setOnClickListener {
+            val count = if (coursesString.isNullOrEmpty()) 0 else coursesString.split(",").size
+            val discount = when (count) {
+                0 -> 0
                 1 -> 0
                 2 -> 10
-                3 -> 15
-                else -> 20
+                else -> 15
             }
+    // save discount to shared preferences
+            val editor = sharedPref.edit()
+            editor.putInt("DISCOUNT", discount)
+            editor.putString("COURSES", coursesString ?: "")
+            editor.apply()
 
-            // Show the discount in the TextView
-            discountTextView.text = "You have a discount of $discountPercentage%."
+            tvDiscount.text = "You have a discount of $discount%."
+            Toast.makeText(this, "Discount saved", Toast.LENGTH_SHORT).show()
+        }
+
+        btnReturn.setOnClickListener {
+            finish()
+        }
+
+        btnNext.setOnClickListener {
+            // go to summary page
+            startActivity(Intent(this, MainActivity17::class.java))
         }
     }
 }

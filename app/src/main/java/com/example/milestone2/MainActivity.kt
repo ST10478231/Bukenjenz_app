@@ -9,37 +9,31 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-    lateinit var username : EditText
-    lateinit var password : EditText
-    lateinit var login : Button
-    lateinit var signup : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        username = findViewById (R.id.editTextText)
-        password = findViewById(R.id.editTextText2)
-        login = findViewById(R.id.button)
-        signup = findViewById(R.id.button2)
 
-        login.setOnClickListener {
-            val usernameLogin = username.text.toString()
-            val passwordLogin = password.text.toString()
+        // declarations contain the businesses mission, details and about us
+        val welcomeText = findViewById<TextView>(R.id.welcomeText)
+        val detailsText = findViewById<TextView>(R.id.detailsText)
+        val aboutUsTitle = findViewById<TextView>(R.id.aboutUsTitle)
+        val aboutUsText = findViewById<TextView>(R.id.aboutUsText)
+        val discoverTitle = findViewById<TextView>(R.id.discoverTitle)
+        val discoverText = findViewById<TextView>(R.id.discoverText)
+        val discount1 = findViewById<TextView>(R.id.discount1)
+        val discount2 = findViewById<TextView>(R.id.discount2)
+        val discount3 = findViewById<TextView>(R.id.discount3)
+        val discount4 = findViewById<TextView>(R.id.discount4)
+        val startButton = findViewById<Button>(R.id.startButton)
 
-            if (usernameLogin.isEmpty() || passwordLogin.isEmpty()) {
-                Toast.makeText(this, "Please fill all the fields", Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                username.text.clear()
-                password.text.clear()
-
-            }
+        startButton.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
-
-
         }
 
     }

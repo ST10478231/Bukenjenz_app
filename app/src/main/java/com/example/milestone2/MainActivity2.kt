@@ -16,9 +16,9 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main2)
-        // initializing buttons
-        month = findViewById(R.id.button6)
-        week = findViewById(R.id.button7)
+        // declare buttons
+        month = findViewById(R.id.button7)
+        week = findViewById(R.id.button8)
 
         month.setOnClickListener {
             val intent = Intent(this, MainActivity3::class.java)

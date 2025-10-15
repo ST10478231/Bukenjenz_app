@@ -19,7 +19,7 @@ class MainActivity8 : AppCompatActivity() {
         Return = findViewById(R.id.button10)
         next = findViewById(R.id.Next)
         Return.setOnClickListener {
-            val intent = Intent(this, MainActivity4::class.java)
+            val intent = Intent(this, MainActivity3::class.java)
             startActivity(intent)
         }
         next.setOnClickListener {
