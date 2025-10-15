@@ -11,6 +11,8 @@ https://github.com/ST10478231/Bukenjenz_app
 <img width="295" height="493" alt="selected courses " src="https://github.com/user-attachments/assets/b14b4451-3deb-4a4c-9998-512c129bb3ea" />
 <img width="211" height="461" alt="Screenshot 2025-10-15 204847" src="https://github.com/user-attachments/assets/d8171a61-e7df-44c9-9e05-d68e583e2975" />
 <img width="207" height="460" alt="Screenshot 2025-10-15 204956" src="https://github.com/user-attachments/assets/c75c9f53-448b-46af-8bca-909781b7c4eb" />
+<img width="481" height="594" alt="Screenshot 2025-10-15 211257" src="https://github.com/user-attachments/assets/ebbd8a93-572d-4d31-81fd-d250b2c55cb6" />
+
 
 
 # Meeting Minutes
