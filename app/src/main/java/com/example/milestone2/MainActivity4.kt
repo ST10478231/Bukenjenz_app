@@ -30,19 +30,19 @@ class MainActivity4 : AppCompatActivity() {
         next = findViewById(R.id.ButtonNext)
 
         button3.setOnClickListener {
-            val intent = Intent(this, MainActivity2::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
         button4.setOnClickListener {
-            val intent = Intent(this, MainActivity5::class.java)
+            val intent = Intent(this, MainActivity9::class.java)
             startActivity(intent)
         }
         button5.setOnClickListener {
-            val intent = Intent(this, MainActivity6::class.java)
+            val intent = Intent(this, MainActivity10::class.java)
             startActivity(intent)
         }
         button8.setOnClickListener {
-            val intent = Intent(this, MainActivity7::class.java)
+            val intent = Intent(this, MainActivity11::class.java)
             startActivity(intent)
         }
         next.setOnClickListener {

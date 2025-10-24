@@ -38,11 +38,11 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
         }
         Landscaping.setOnClickListener {
-            val intent = Intent(this, MainActivity7::class.java)
+            val intent = Intent(this, MainActivity8::class.java)
             startActivity(intent)
         }
         LifeSkills.setOnClickListener {
-            val intent = Intent(this, MainActivity8::class.java)
+            val intent = Intent(this, MainActivity7::class.java)
             startActivity(intent)
         }
         Return.setOnClickListener {
@@ -50,7 +50,7 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
         }
         next.setOnClickListener {
-            val intent = Intent(this, MainActivity12::class.java)
+            val intent = Intent(this, MainActivity4::class.java)
             startActivity(intent)
         }
 
